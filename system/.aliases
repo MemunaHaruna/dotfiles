@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Recursively remove .DS_Store files
+alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Git CLI aliases
+alias g='git'
+alias gi='git init'
+alias gra='git remote add'
+alias gs='git status'
+
+# Aliases for NPM
+alias nr='npm run'
+alias ni='npm install'
+alias nid='npm install -D'
+alias gpom="git push origin master"
