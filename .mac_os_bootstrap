@@ -1,0 +1,34 @@
+# Install Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# This opens up a giant repository of system tools you can install from the command line.
+brew tap caskroom/cask
+brew tap caskroom/versions
+
+# install git
+brew install git
+
+# install rvm and rails
+curl -L https://get.rvm.io | bash -s stable --auto-dotfiles --autolibs=enable --rails
+
+# NodeJS
+brew install node
+
+# Heroku
+brew install heroku
+
+# Yarn - an alternative to npm
+brew install yarn
+
+# Docker for containerization
+brew install docker
+
+brew cask install google-chrome
+
+brew cask install vlc
